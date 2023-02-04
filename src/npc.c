@@ -1,0 +1,2 @@
+int nextNpcId = 0;
+
