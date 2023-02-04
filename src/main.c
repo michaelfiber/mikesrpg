@@ -3,6 +3,9 @@
 
 int GameSeed = 12345;
 
+int NpcWidth = 16;
+int NpcHeight = 32;
+
 void Update();
 void Draw();
 

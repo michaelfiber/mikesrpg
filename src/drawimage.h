@@ -11,6 +11,7 @@ typedef struct PaletteImage
 	int height;
 } PaletteImage;
 
+void ClearImage(Image *img, Color color);
 Image PaletteImageToImage(PaletteImage *pimg);
 void DrawImageRec(Image *img, int x, int y, int width, int height, Color color);
 void DrawImagePixel(Image *img, int x, int y, Color color);
