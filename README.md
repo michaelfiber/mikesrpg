@@ -43,6 +43,16 @@ Grid based local map. Use the biome set by the WORLD map to determine types of g
 
 If there is a WORLD Feature assigned to this LOCAL map it must be randomly placed based on seeded rng. NPCs are randomly generated to go with the WORLD feature where applicable as well.  Details of the WORLD feature and associated NPCs can be stored in the WORLD feature linked list, collected treasure, killed NPCs, etc should be maintained across LOCAL map reloads. The ground terrain won't be changeable so it will generate on the fly each time the local map loads. 
 
+### INTERIOR Generation
+Interior spaces can be:
+- House
+- Horde Keep
+- Horde Keep Dungeon
+- Cave
+- Ice Cave
+- Evil Castle
+- Evil Dungeon
+
 ### NPC Generation
 There are human NPCs, horde NPCs and great evil NPCs. Each NPC is drawn as a single image sprite made up of colored rectangles. They are generated using the ID of their associated WORLD feature as rng seed and then colors are generated along color patterns preset based on NPC type.  
 - Human NPCs
