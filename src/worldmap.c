@@ -28,14 +28,14 @@ Image GenerateHeightMapImage(int width, int height)
 			int dx = abs(x - (width / 2));
 			int dy = abs(y - (height / 2));
 			float distance = sqrt((dx * dx) + (dy * dy));
-			data[index++] = (fnlGetNoise2D(&noise, x, y) + 1) * 128 * pow((185 - distance) / maxDistance, 1.1);
+			data[index++] = (fnlGetNoise2D(&noise, x, y) + 1) * 128 * pow((300 - distance) / maxDistance, 1.1);
 			if (data[index - 1] > max)
 				max = data[index - 1];
 		}
 	}
 
 	float rate = (max * 1.0f) / 255;
-	for (int i = 0; i < 256 * 256; i++)
+	for (int i = 0; i < width * height; i++)
 	{
 		data[i] = data[i] / rate;
 	}
