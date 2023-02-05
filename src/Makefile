@@ -8,6 +8,9 @@ PROJECT_NAME=mikesrpg
 ODIR=obj
 
 SOURCE_FILES ?= \
+	worldmap.c \
+	drawimage.c \
+	npc.c \
 	main.c
 
 OBJS = $(patsubst %.c, %.o, $(SOURCE_FILES))
